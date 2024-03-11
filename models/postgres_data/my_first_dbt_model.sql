@@ -17,9 +17,8 @@ with source_data as (
 
 )
 
-select *, {{var('success_condition')}} as success_condition
+select *
 from source_data
-where id >= {{var('second_condition')}}
 
 /*
     Uncomment the line below to remove records with null `id` values
