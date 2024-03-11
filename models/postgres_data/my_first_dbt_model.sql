@@ -7,7 +7,7 @@
     Try changing "table" to "view" below
 */
 
-{{ config(materialized='table', alias='dbt_first_model') }}
+{{ config(materialized='table', alias='sample_model') }}
 
 with source_data as (
 
